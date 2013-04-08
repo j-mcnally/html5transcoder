@@ -8,7 +8,7 @@ Transcoder::App.controller do
   get "/transcodeaudio" do
     
     src = params[:source]
-
+    format = params[:format]
     
     file = Tempfile.new("foo.caf") #change this to expected audio input format.
     file.binmode
