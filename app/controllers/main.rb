@@ -10,7 +10,7 @@ Transcoder::App.controller do
     src = params[:source]
 
     
-    file = Tempfile.new("foo.caf")
+    file = Tempfile.new("foo.caf") #change this to expected audio input format.
     file.binmode
     open(src) { |data| file.write data.read }
 
